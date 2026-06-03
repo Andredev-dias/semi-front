@@ -71,7 +71,7 @@ section {
 
 .s1 h1 {
     font-size: 100px;
-    word-break: break-all;
+    /* word-break: break-all; */
     color: #ffffff;
     text-transform: uppercase;
     text-shadow: 0px 3px 10px black;
@@ -108,6 +108,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 60vh;
 }
 
 .video {
@@ -117,8 +118,118 @@ section {
     border-radius: 10px;
 }
 
+.s5 {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario {
+    background-color: #090909;
+    color: #ffffff;
+    box-shadow: 0px 3px 10px #090909;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.formulario label {
+    width: 100%;
+    margin-bottom: -10px;
+    padding-left: 10px;
+}
+
+.formulario input {
+    padding: 10px;
+    border: none;
+    background: transparent;
+    color: white;
+    border-bottom: 2px solid white;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+    color: cornflowerblue;
+    border-bottom: 2px solid cornflowerblue;
+}
+
+textarea {
+    max-width: 250px;
+    min-width: 250px;
+    min-height: 150px;
+    max-height: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+}
+
+textarea:focus {
+    outline: none;
+    color: cornflowerblue;
+    border: 2px solid cornflowerblue;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    border: 2px solid white;
+    padding: 10px;
+    background: transparent;
+    color: white;
+    transition: all 200ms linear;
+    width: 100%;
+}
+
+button:hover {
+    background: white;
+    color: #090909;
+    cursor: pointer;
+}
+
 a {
     text-decoration: none;
+}
+
+.s3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 100px;
+}
+
+.card {
+    background-color: #3260b7;
+    color: white;
+    font-size: 20px;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px #090909;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.textCard{
+    padding: 20px;
+}
+
+.textCard h4{
+    margin-bottom: 10px;
 }
 
 footer {
@@ -134,7 +245,7 @@ footer {
 footer a img {
     border-radius: 999px;
     opacity: 0.7;
-    transition:all 200ms ease-in-out ;
+    transition: all 200ms ease-in-out;
 }
 
 footer a img:hover {
