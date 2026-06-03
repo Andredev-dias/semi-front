@@ -10,5 +10,5 @@ function enviar(){
     const assunto = document.getElementById('assunto').value 
     const mensagem = `Gostaria de entrar em contato!\n\nNome: ${nome} \nAssunto: ${assunto}`   
     const msg = encodeURIComponent(mensagem)
-    window.open(`https://wa.me/5541999999999?text=${msg}`)
+    window.open(`https://wa.me/*************?text=${msg}`)
 }
